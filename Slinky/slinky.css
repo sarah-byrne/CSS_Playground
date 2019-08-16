@@ -1,0 +1,120 @@
+body {
+  background: yellowgreen;
+  margin: 0;
+}
+
+.stairs {
+  width: 500px;
+  height: 500px;
+  /* margin: 30px; */
+  /* background: white; */
+}
+
+.box1 {
+  width: 20%;
+  height: 20%;
+  position: relative;
+  /* background: yellow; */
+  animation-name: rollBox1;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+
+.box2 {
+  width: 20%;
+  height: 20%;
+  margin-left: 10%;
+  margin-top: -20%;
+  position: relative;
+  /* background: grey; */
+  animation-name: rollBox2;
+  animation-duration: 14s;
+  animation-fill-mode: forwards;
+}
+
+.midBox1 {
+  width: 20%;
+  height: 20%;
+  margin-top: -10%;
+  position: relative;
+  /* background: burlywood; */
+  animation-name: rollMidBox1;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+
+.step {
+  /* background: pink; */
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+
+.slinky {
+  width: 100%;
+  height: 6px;
+  background: purple;
+  position: relative;
+  top: 100%;
+}
+
+@keyframes rollBox1 {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  99% {
+    transform: rotate(270deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(270deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rollBox2 {
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  54% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  55% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  99% {
+    transform: rotate(270deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(270deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rollMidBox1 {
+  from {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  70% {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  71% {
+    transform: rotate(90deg);
+    opacity: 1;
+  }
+  99% {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+}
