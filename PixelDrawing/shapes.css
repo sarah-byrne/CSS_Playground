@@ -1,4 +1,29 @@
-.grid {
+.flexbox-gameboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80px;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.black {
+  background-color: black;
+}
+
+.square {
+  height: 20px;
+  width: 20px;
+}
+
+.cssgrid-gameboard {
+  width: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.box-shadow-gameboard {
   background-color: gold;
   height: 20px;
   width: 20px;
